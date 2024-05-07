@@ -1,0 +1,27 @@
+.input-group {
+    box-sizing: border-box;
+    display: flex;
+    place-content: flex-start;
+    gap: 0;
+    input {
+        width: 50px;
+        margin-bottom: 0;
+        /*margin: 0;
+        border-radius: 0;
+        text-align: center;
+        border: 1px solid;
+        border-color: #09f transparent;*/
+    }
+    button {
+        margin: 0;
+        height: 40px;
+        width: 38px;
+        border: 1px solid #09f;
+    }
+    .antes {
+        border-radius: 15% 0 0 15%;
+    }
+    .despues {
+        border-radius: 0 15% 15% 0;
+    }
+}
