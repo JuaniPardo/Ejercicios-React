@@ -2,24 +2,19 @@ import {useState} from "react";
 import '../css/ProductItem.css'
 
 // eslint-disable-next-line react/prop-types
-function ProductoItem({ID, nombre, precio, handleTotal}) {
+function ProductoItem({ID, nombre, precio, totalUpdater}) {
 
   const [cantidad, setCantidad] = useState(0)
 
+  // Calculo el subtotal
+  const subTotal = cantidad * precio
 
   const handleQty = (e) => {
     // Obtengo el value del input
     const newQty = parseInt(e.target.value)
     setCantidad(newQty)
-    handleTotal(setCantidad
-
-    )
+    totalUpdater(cantidad * precio, newQty * precio)
   }
-
-  // Calculo el subtotal
-  const subTotal = cantidad * precio
-
-  // handleTotal(subTotal)
 
   return (
     <tr>

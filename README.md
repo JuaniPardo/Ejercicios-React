@@ -58,7 +58,7 @@ Dentro del componente `ProductItem.jsx` crear:
   (el estado anterior)
 </details>
 
-### Ejercicio 5
+### Ejercicio 5 :heavy_check_mark:
 
 <details>
 <summary>Estado ProductList</summary>

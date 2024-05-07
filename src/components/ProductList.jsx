@@ -6,8 +6,8 @@ function ProductList() {
 
   const [total, setTotal] = useState(0)
 
-  const handleTotal = (subTotal) => {
-    setTotal(prevTotal => prevTotal + subTotal)
+  const handleTotal = (currentSubTotal,newSubTotal) => {
+    setTotal(total - currentSubTotal + newSubTotal)
   }
 
   return (
