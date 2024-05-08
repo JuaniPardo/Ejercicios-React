@@ -11,9 +11,9 @@ function ProductoItem({ID, nombre, precio, totalUpdater}) {
 
   const handleQty = (e) => {
     // Obtengo el value del input
-    const newQty = parseInt(e.target.value)
-    setCantidad(newQty)
+    const newQty =  !isNaN(parseInt(e.target.value)) ? parseInt(e.target.value) : 0
     totalUpdater(cantidad * precio, newQty * precio)
+    setCantidad(newQty)
   }
 
   return (
