@@ -20,7 +20,7 @@ function ProductoItem({ID, nombre, precio, totalUpdater}) {
     <tr>
       <td> {ID} </td>
       <td> {nombre} </td>
-      <td> {precio} </td>
+      <td> {precio.toLocaleString('es-AR', {style:"currency", currency:"ARS"})} </td>
       <td className={"input-group"}>
         <input
           min={0}
@@ -29,7 +29,7 @@ function ProductoItem({ID, nombre, precio, totalUpdater}) {
           onChange={handleQty}
         />
       </td>
-      <td> {subTotal} </td>
+      <td> {subTotal.toLocaleString('es-AR', {style:"currency", currency:"ARS"})} </td>
     </tr>
   )
 }

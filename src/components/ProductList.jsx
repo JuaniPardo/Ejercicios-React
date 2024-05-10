@@ -40,7 +40,7 @@ function ProductList() {
         <tr>
           <th colSpan={4}>TOTAL</th>
           <td>
-            {total}
+            {total.toLocaleString('es-AR', {style:"currency", currency:"ARS"})}
           </td>
         </tr>
         </tfoot>
